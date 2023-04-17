@@ -34,7 +34,7 @@ const parseNotes = (string) => {
 
   for (const str of string.split(', ')) {
     const [note, length] = str.split(' ');
-    notesArray.push(note, length);
+    notesArray.push({note, length});
   }
 
   return notesArray;
